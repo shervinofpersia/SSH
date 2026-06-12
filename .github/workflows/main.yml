@@ -2,41 +2,42 @@ name: Scrape SSH Configs
 
 on:
   schedule:
-    - cron: '0 */1 * * *'   # هر ۳ ساعت
+    - cron: '0 */3 * * *'   # هر 3 ساعت
   workflow_dispatch:
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
     permissions:
-      contents: write          # برای push کردن
+      contents: write
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.x'
+
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: stable
 
       - name: Install dependencies
-        run: pip install requests beautifulsoup4
+        run: pip install -r requirements.txt
 
-      - name: Run scraper
+      - name: Run Selenium scraper
         run: python scrape_ssh.py
 
-      - name: Install dependencies
-        run: pip install cloudscraper beautifulsoup4
-
-      - name: Force commit and push
+      - name: Commit and push JSON
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add ssh_configs.json
           if ! git diff --cached --quiet; then
-            git commit -m "☬ Update SSH configs ($(date -u +'%Y-%m-%dT%H:%M:%SZ'))"
+            git commit -m "🔄 Update SSH configs ($(date -u +'%Y-%m-%dT%H:%M:%SZ'))"
             git push
           else
-            echo "بدون تغییر – commit انجام نشد."
+            echo "No changes to commit"
           fi
