@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSH Configs - VPN Jantit Scraper</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f6f9;
+            color: #1a202c;
+            padding: 20px;
+        }
+        .container { max-width: 1300px; margin: auto; }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 2rem;
+            color: #1e3c72;
+        }
+        .header p {
+            color: #4a5568;
+            margin-top: 5px;
+        }
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+        }
+        .controls select, .controls input {
+            padding: 10px 15px;
+            border-radius: 8px;
+            border: 1px solid #cbd5e0;
+            font-size: 0.9rem;
+            background: white;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+        }
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+        .flag {
+            width: 36px;
+            height: 24px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        .server-name {
+            font-weight: 700;
+            font-size: 1.1rem;
+            flex: 1;
+            word-break: break-word;
+        }
+        .status-badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .available { background: #d4edda; color: #155724; }
+        .full { background: #f8d7da; color: #721c24; }
+        .info-row {
+            background: #f7fafc;
+            border-radius: 8px;
+            padding: 10px 12px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .info-row code {
+            font-family: 'Courier New', monospace;
+            background: #edf2f7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            max-width: 180px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .copy-btn {
+            background: #1e3c72;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 5px 12px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            transition: background 0.2s;
+        }
+        .copy-btn:hover { background: #0f2b4f; }
+        .features {
+            margin-top: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding-top: 8px;
+        }
+        .badge {
+            background: #e2e8f0;
+            color: #2d3748;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            white-space: nowrap;
+        }
+        .no-result {
+            text-align: center;
+            grid-column: 1 / -1;
+            padding: 40px;
+            color: #718096;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>🔐 SSH Servers Collection</h1>
+        <p>اطلاعات سرورهای SSH از چند کشور قدرتمند | بروزرسانی هر ۳ ساعت</p>
+    </div>
+    <div class="controls">
+        <select id="countryFilter">
+            <option value="">همه کشورها</option>
+        </select>
+        <input type="text" id="searchBox" placeholder="جستجوی سرور (نام یا هاست)...">
+    </div>
+    <div id="serverGrid" class="grid">
+        <div class="no-result">در حال بارگذاری...</div>
+    </div>
+</div>
+
+<script>
+    // آدرس فایل JSON در ریپازیتوری شما
+    const JSON_URL = 'https://raw.githubusercontent.com/shervinofpersia/SSH/main/ssh_configs.json';
+
+    let allServers = [];
+
+    async function fetchServers() {
+        try {
+            const res = await fetch(JSON_URL + '?t=' + Date.now());
+            if (!res.ok) throw new Error('خطا در دریافت داده');
+            allServers = await res.json();
+            populateCountryFilter();
+            renderServers(allServers);
+        } catch (err) {
+            document.getElementById('serverGrid').innerHTML = 
+                '<div class="no-result">❌ خطا در بارگذاری اطلاعات. لطفاً بعداً تلاش کنید.</div>';
+            console.error(err);
+        }
+    }
+
+    function populateCountryFilter() {
+        const countries = [...new Set(allServers.map(s => s.country))].filter(Boolean);
+        const select = document.getElementById('countryFilter');
+        select.innerHTML = '<option value="">همه کشورها</option>' +
+            countries.map(c => `<option value="${c}">${c}</option>`).join('');
+    }
+
+    function renderServers(servers) {
+        const grid = document.getElementById('serverGrid');
+        if (!servers.length) {
+            grid.innerHTML = '<div class="no-result">هیچ سروری مطابقت ندارد.</div>';
+            return;
+        }
+
+        grid.innerHTML = servers.map(s => `
+            <div class="card">
+                <div class="card-header">
+                    ${s.flag ? `<img src="${s.flag}" class="flag" alt="${s.country}" onerror="this.style.display='none'">` : ''}
+                    <span class="server-name">${s.name}</span>
+                    <span class="status-badge ${s.status === 'Available' ? 'available' : 'full'}">${s.status}</span>
+                </div>
+                
+                <div class="info-row">
+                    <strong>Host</strong>
+                    <code>${s.host || '—'}</code>
+                    <button class="copy-btn" data-copy="${s.host || ''}">📋 کپی</button>
+                </div>
+
+                ${s.ports && s.ports.length ? `
+                <div class="info-row">
+                    <strong>Ports</strong>
+                    <code>${s.ports.join(', ')}</code>
+                    <button class="copy-btn" data-copy="${s.ports.join(',')}">📋 کپی</button>
+                </div>` : ''}
+
+                <div class="features">
+                    ${(s.features || []).map(f => `<span class="badge">${f}</span>`).join('')}
+                </div>
+            </div>
+        `).join('');
+
+        // فعال‌سازی دکمه‌های کپی
+        document.querySelectorAll('.copy-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const text = btn.dataset.copy;
+                if (!text) return;
+                navigator.clipboard.writeText(text).then(() => {
+                    btn.textContent = '✓ کپی شد';
+                    setTimeout(() => btn.textContent = '📋 کپی', 1500);
+                });
+            });
+        });
+    }
+
+    function filterServers() {
+        const country = document.getElementById('countryFilter').value;
+        const search = document.getElementById('searchBox').value.toLowerCase().trim();
+
+        let filtered = allServers;
+        if (country) {
+            filtered = filtered.filter(s => s.country === country);
+        }
+        if (search) {
+            filtered = filtered.filter(s =>
+                s.name.toLowerCase().includes(search) ||
+                (s.host && s.host.toLowerCase().includes(search))
+            );
+        }
+        renderServers(filtered);
+    }
+
+    document.getElementById('countryFilter').addEventListener('change', filterServers);
+    document.getElementById('searchBox').addEventListener('input', filterServers);
+
+    fetchServers();
+</script>
+</body>
+</html>
