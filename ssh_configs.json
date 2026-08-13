@@ -24,8 +24,8 @@
       "80"
     ],
     "features": [
-      "BADVPN: 7200,446",
       "UDP Custom",
+      "BADVPN: 7200,446",
       "WebSocket CDN",
       "SlowDNS"
     ],
@@ -108,8 +108,8 @@
       "80"
     ],
     "features": [
-      "BADVPN: 7200,446",
       "UDP Custom",
+      "BADVPN: 7200,446",
       "WebSocket CDN",
       "SlowDNS"
     ],
@@ -142,8 +142,8 @@
       "80"
     ],
     "features": [
-      "BADVPN: 7200,446",
       "UDP Custom",
+      "BADVPN: 7200,446",
       "WebSocket CDN",
       "SlowDNS"
     ],
@@ -185,8 +185,8 @@
       "80"
     ],
     "features": [
-      "BADVPN: 7200,446",
       "UDP Custom",
+      "BADVPN: 7200,446",
       "WebSocket CDN",
       "SlowDNS"
     ],
@@ -227,8 +227,8 @@
       "80"
     ],
     "features": [
-      "BADVPN: 7200,446",
       "UDP Custom",
+      "BADVPN: 7200,446",
       "WebSocket CDN",
       "SlowDNS"
     ],
@@ -279,7 +279,6 @@
     ],
     "features": [
       "BADVPN: 7200,446",
-      "UDP Custom",
       "WebSocket CDN",
       "SlowDNS"
     ],
@@ -304,8 +303,8 @@
       "80"
     ],
     "features": [
-      "BADVPN: 7200,446",
       "UDP Custom",
+      "BADVPN: 7200,446",
       "WebSocket CDN",
       "SlowDNS"
     ],
@@ -381,8 +380,8 @@
       "80"
     ],
     "features": [
-      "BADVPN: 7200,446",
       "UDP Custom",
+      "BADVPN: 7200,446",
       "WebSocket CDN",
       "SlowDNS"
     ],
@@ -398,8 +397,8 @@
       "80"
     ],
     "features": [
-      "BADVPN: 7200,446",
       "UDP Custom",
+      "BADVPN: 7200,446",
       "WebSocket CDN",
       "SlowDNS"
     ],
@@ -450,7 +449,8 @@
     "features": [
       "UDP Custom",
       "BADVPN: 446,7200",
-      "WebSocket CDN"
+      "WebSocket CDN",
+      "SlowDNS"
     ],
     "status": "Available",
     "country": "India",
@@ -507,8 +507,8 @@
       "80"
     ],
     "features": [
-      "BADVPN: 7200,446",
       "UDP Custom",
+      "BADVPN: 7200,446",
       "WebSocket CDN",
       "SlowDNS"
     ],
@@ -523,8 +523,8 @@
       "22"
     ],
     "features": [
-      "BADVPN: 7200,446",
       "UDP Custom",
+      "BADVPN: 7200,446",
       "WebSocket CDN",
       "SlowDNS"
     ],
@@ -558,8 +558,8 @@
       "80"
     ],
     "features": [
-      "BADVPN: 7200,446",
       "UDP Custom",
+      "BADVPN: 7200,446",
       "WebSocket CDN"
     ],
     "status": "Available",
@@ -616,8 +616,8 @@
       "80"
     ],
     "features": [
-      "BADVPN: 7200,446",
       "UDP Custom",
+      "BADVPN: 7200,446",
       "WebSocket CDN",
       "SlowDNS"
     ],
@@ -634,7 +634,8 @@
     ],
     "features": [
       "BADVPN: 446,7200",
-      "WebSocket CDN"
+      "WebSocket CDN",
+      "SlowDNS"
     ],
     "status": "Available",
     "country": "United States",
@@ -647,8 +648,8 @@
       "22"
     ],
     "features": [
-      "BADVPN: 7200,446",
       "UDP Custom",
+      "BADVPN: 7200,446",
       "WebSocket CDN",
       "SlowDNS"
     ],
@@ -664,8 +665,8 @@
       "80"
     ],
     "features": [
-      "BADVPN: 7200,446",
       "UDP Custom",
+      "BADVPN: 7200,446",
       "WebSocket CDN",
       "SlowDNS"
     ],
@@ -685,7 +686,7 @@
       "WebSocket CDN",
       "SlowDNS"
     ],
-    "status": "Available",
+    "status": "Full",
     "country": "United States",
     "flag": "https://www.vpnjantit.com/assets/bendera/united-states.svg"
   },
@@ -697,8 +698,8 @@
       "80"
     ],
     "features": [
-      "BADVPN: 7200,446",
       "UDP Custom",
+      "BADVPN: 7200,446",
       "WebSocket CDN",
       "SlowDNS"
     ],
@@ -714,8 +715,8 @@
       "80"
     ],
     "features": [
-      "BADVPN: 7200,446",
       "UDP Custom",
+      "BADVPN: 7200,446",
       "WebSocket CDN",
       "SlowDNS"
     ],
@@ -764,8 +765,8 @@
       "80"
     ],
     "features": [
-      "BADVPN: 7200,446",
       "UDP Custom",
+      "BADVPN: 7200,446",
       "WebSocket CDN",
       "SlowDNS"
     ],
@@ -798,8 +799,8 @@
       "80"
     ],
     "features": [
-      "BADVPN: 7200,446",
       "UDP Custom",
+      "BADVPN: 7200,446",
       "WebSocket CDN",
       "SlowDNS"
     ],
