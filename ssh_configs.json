@@ -386,12 +386,12 @@
       "WebSocket CDN",
       "UDP Custom"
     ],
-    "status": "Available",
+    "status": "Full",
     "country": "India",
     "flag": "https://www.vpnjantit.com/assets/bendera/india.svg"
   },
   {
-    "name": "PREMIUM SSH Tunnel India 6",
+    "name": "FREE SSH Tunnel India 6",
     "host": "in6.vpnjantit.com",
     "ports": [
       "22",
