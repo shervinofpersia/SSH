@@ -7,10 +7,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 446,7200"
+      "SlowDNS",
+      "BADVPN: 446,7200",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "Germany",
@@ -24,10 +24,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 446,7200"
+      "SlowDNS",
+      "BADVPN: 446,7200",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "Germany",
@@ -41,10 +41,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 7200,446"
+      "BADVPN: 7200,446",
+      "SlowDNS",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "Germany",
@@ -59,7 +59,9 @@
     ],
     "features": [
       "WebSocket CDN",
-      "BADVPN: 446,7200"
+      "SlowDNS",
+      "BADVPN: 446,7200",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "Germany",
@@ -73,10 +75,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 7200,446"
+      "BADVPN: 7200,446",
+      "SlowDNS",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "Germany",
@@ -90,9 +92,9 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
       "WebSocket CDN",
-      "BADVPN: 7200,446"
+      "BADVPN: 7200,446",
+      "SlowDNS"
     ],
     "status": "Available",
     "country": "Germany",
@@ -106,10 +108,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 7200,446"
+      "BADVPN: 7200,446",
+      "SlowDNS",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "Germany",
@@ -123,10 +125,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 446,7200"
+      "SlowDNS",
+      "BADVPN: 446,7200",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "Germany",
@@ -140,10 +142,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 7200,446"
+      "SlowDNS",
+      "BADVPN: 446,7200",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "Germany",
@@ -157,10 +159,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 7200,446"
+      "BADVPN: 7200,446",
+      "SlowDNS",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "Germany",
@@ -183,10 +185,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 7200,446"
+      "BADVPN: 7200,446",
+      "SlowDNS",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "Finland",
@@ -200,97 +202,21 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
       "WebSocket CDN",
-      "BADVPN: 7200,446"
+      "BADVPN: 7200,446",
+      "SlowDNS"
     ],
     "status": "Available",
     "country": "Finland",
     "flag": "https://www.vpnjantit.com/assets/bendera/finland.svg"
   },
   {
-    "name": "NewBUY YOUR OWN SERVERVPN",
+    "name": "NewBUY YOUR OWN SERVER VPN",
     "host": "",
     "ports": [],
     "features": [],
     "status": "Full",
     "country": "Finland",
-    "flag": ""
-  },
-  {
-    "name": "FREE SSH Tunnel United Kingdom 1",
-    "host": "uk.vpnjantit.com",
-    "ports": [
-      "22",
-      "80"
-    ],
-    "features": [
-      "SlowDNS",
-      "WebSocket CDN",
-      "BADVPN: 446,7200"
-    ],
-    "status": "Available",
-    "country": "United Kingdom",
-    "flag": "https://www.vpnjantit.com/assets/bendera/united-kingdom.svg"
-  },
-  {
-    "name": "FREE SSH Tunnel United Kingdom 2",
-    "host": "uk2.vpnjantit.com",
-    "ports": [
-      "22",
-      "80"
-    ],
-    "features": [
-      "SlowDNS",
-      "UDP Custom",
-      "WebSocket CDN",
-      "BADVPN: 446,7200"
-    ],
-    "status": "Available",
-    "country": "United Kingdom",
-    "flag": "https://www.vpnjantit.com/assets/bendera/united-kingdom.svg"
-  },
-  {
-    "name": "FREE SSH Tunnel United Kingdom 3",
-    "host": "uk3.vpnjantit.com",
-    "ports": [
-      "22",
-      "80"
-    ],
-    "features": [
-      "SlowDNS",
-      "UDP Custom",
-      "WebSocket CDN",
-      "BADVPN: 446,7200"
-    ],
-    "status": "Available",
-    "country": "United Kingdom",
-    "flag": "https://www.vpnjantit.com/assets/bendera/united-kingdom.svg"
-  },
-  {
-    "name": "FREE SSH Tunnel Premium UK",
-    "host": "premiuk.vpnjantit.com",
-    "ports": [
-      "22",
-      "80"
-    ],
-    "features": [
-      "SlowDNS",
-      "UDP Custom",
-      "WebSocket CDN",
-      "BADVPN: 7200,446"
-    ],
-    "status": "Available",
-    "country": "United Kingdom",
-    "flag": "https://www.vpnjantit.com/assets/bendera/united-kingdom.svg"
-  },
-  {
-    "name": "NewBUY YOUR OWN SERVERVPN",
-    "host": "",
-    "ports": [],
-    "features": [],
-    "status": "Full",
-    "country": "United Kingdom",
     "flag": ""
   },
   {
@@ -301,10 +227,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 7200,446"
+      "BADVPN: 7200,446",
+      "SlowDNS",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "Netherlands",
@@ -318,10 +244,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 446,7200"
+      "SlowDNS",
+      "BADVPN: 446,7200",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "Netherlands",
@@ -335,10 +261,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 446,7200"
+      "SlowDNS",
+      "BADVPN: 446,7200",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "Netherlands",
@@ -353,10 +279,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 446,7200"
+      "SlowDNS",
+      "BADVPN: 446,7200",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "Netherlands",
@@ -379,10 +305,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 7200,446"
+      "SlowDNS",
+      "BADVPN: 446,7200",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "India",
@@ -396,27 +322,27 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 7200,446"
+      "BADVPN: 7200,446",
+      "SlowDNS",
+      "UDP Custom"
     ],
     "status": "Full",
     "country": "India",
     "flag": "https://www.vpnjantit.com/assets/bendera/india.svg"
   },
   {
-    "name": "PREMIUM SSH Tunnel India 1",
+    "name": "FREE SSH Tunnel India 1",
     "host": "in1.vpnjantit.com",
     "ports": [
       "22",
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 446,7200"
+      "SlowDNS",
+      "BADVPN: 446,7200",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "India",
@@ -430,9 +356,9 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
       "WebSocket CDN",
-      "BADVPN: 446,7200"
+      "BADVPN: 7200,446",
+      "SlowDNS"
     ],
     "status": "Available",
     "country": "India",
@@ -446,10 +372,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 446,7200"
+      "SlowDNS",
+      "BADVPN: 446,7200",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "India",
@@ -472,10 +398,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 446,7200"
+      "BADVPN: 7200,446",
+      "SlowDNS",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "France",
@@ -489,10 +415,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 446,7200"
+      "SlowDNS",
+      "BADVPN: 446,7200",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "France",
@@ -506,10 +432,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 7200,446"
+      "SlowDNS",
+      "BADVPN: 446,7200",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "France",
@@ -522,10 +448,10 @@
       "22"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 446,7200"
+      "SlowDNS",
+      "BADVPN: 446,7200",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "France",
@@ -540,10 +466,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 7200,446"
+      "BADVPN: 7200,446",
+      "SlowDNS",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "France",
@@ -557,9 +483,9 @@
       "80"
     ],
     "features": [
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 446,7200"
+      "BADVPN: 446,7200",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "France",
@@ -573,9 +499,9 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
       "WebSocket CDN",
-      "BADVPN: 7200,446"
+      "BADVPN: 7200,446",
+      "SlowDNS"
     ],
     "status": "Available",
     "country": "France",
@@ -598,10 +524,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 446,7200"
+      "SlowDNS",
+      "BADVPN: 446,7200",
+      "UDP Custom"
     ],
     "status": "Full",
     "country": "United States",
@@ -615,12 +541,12 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 7200,446"
+      "BADVPN: 7200,446",
+      "SlowDNS",
+      "UDP Custom"
     ],
-    "status": "Full",
+    "status": "Available",
     "country": "United States",
     "flag": "https://www.vpnjantit.com/assets/bendera/united-states.svg"
   },
@@ -632,10 +558,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 7200,446"
+      "BADVPN: 7200,446",
+      "SlowDNS",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "United States",
@@ -649,10 +575,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 446,7200"
+      "SlowDNS",
+      "BADVPN: 446,7200",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "United States",
@@ -666,9 +592,9 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
       "WebSocket CDN",
-      "BADVPN: 7200,446"
+      "BADVPN: 7200,446",
+      "SlowDNS"
     ],
     "status": "Available",
     "country": "United States",
@@ -682,10 +608,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 7200,446"
+      "BADVPN: 7200,446",
+      "SlowDNS",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "United States",
@@ -699,9 +625,9 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
       "WebSocket CDN",
-      "BADVPN: 446,7200"
+      "BADVPN: 446,7200",
+      "SlowDNS"
     ],
     "status": "Available",
     "country": "United States",
@@ -715,10 +641,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 7200,446"
+      "BADVPN: 7200,446",
+      "SlowDNS",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "United States",
@@ -732,9 +658,9 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
       "WebSocket CDN",
-      "BADVPN: 446,7200"
+      "BADVPN: 446,7200",
+      "SlowDNS"
     ],
     "status": "Available",
     "country": "United States",
@@ -748,10 +674,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 7200,446"
+      "BADVPN: 7200,446",
+      "SlowDNS",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "United States",
@@ -765,10 +691,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 7200,446"
+      "BADVPN: 7200,446",
+      "SlowDNS",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "United States",
@@ -781,10 +707,10 @@
       "22"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 7200,446"
+      "BADVPN: 7200,446",
+      "SlowDNS",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "United States",
@@ -798,10 +724,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 446,7200"
+      "SlowDNS",
+      "BADVPN: 446,7200",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "United States",
@@ -816,10 +742,10 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 446,7200"
+      "SlowDNS",
+      "BADVPN: 446,7200",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "United States",
@@ -833,17 +759,17 @@
       "80"
     ],
     "features": [
-      "SlowDNS",
-      "UDP Custom",
       "WebSocket CDN",
-      "BADVPN: 446,7200"
+      "SlowDNS",
+      "BADVPN: 446,7200",
+      "UDP Custom"
     ],
     "status": "Available",
     "country": "United States",
     "flag": "https://www.vpnjantit.com/assets/bendera/united-states.svg"
   },
   {
-    "name": "NewBUY YOUR OWN SERVERVPN",
+    "name": "NewBUY YOUR OWN SERVER VPN",
     "host": "",
     "ports": [],
     "features": [],
